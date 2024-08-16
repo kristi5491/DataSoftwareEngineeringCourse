@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.3.4.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="e85927a9-e9e3-4128-abb0-f9f2da8bce9c" data-root-id="p1104" style="display: contents;"></div>
+  
+    <script type="application/json" id="p1153">
+      {"5c6d078c-4dc9-45ff-a576-50945cae21d2":{"version":"3.3.4","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p1104","attributes":{"height":400,"x_range":{"type":"object","name":"FactorRange","id":"p1114","attributes":{"factors":["1-male","1-female","2-male","2-female","3-male","3-female"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1106"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1115"},"y_scale":{"type":"object","name":"LinearScale","id":"p1116"},"title":{"type":"object","name":"Title","id":"p1107","attributes":{"text":"Survival Rate by Class and Gender"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1144","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1101","attributes":{"selected":{"type":"object","name":"Selection","id":"p1102","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1103"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAA"},"shape":[6],"dtype":"int32","order":"little"}],["Pclass",{"type":"ndarray","array":{"type":"bytes","data":"AQAAAAEAAAACAAAAAgAAAAMAAAADAAAA"},"shape":[6],"dtype":"int32","order":"little"}],["Sex",{"type":"ndarray","array":["female","male","female","male","female","male"],"shape":[6],"dtype":"object","order":"little"}],["Survived",{"type":"ndarray","array":{"type":"bytes","data":"R31no74zWEDBOtq8T3FCQGwor6G8BldAtJfQXkJ7L0AAAAAAAABJQIdYGM3eFitA"},"shape":[6],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1145","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1146"}}},"glyph":{"type":"object","name":"VBar","id":"p1141","attributes":{"x":{"type":"field","field":"Pclass"},"width":{"type":"value","value":0.2},"top":{"type":"field","field":"Survived"},"line_color":{"type":"value","value":"navy"},"line_alpha":{"type":"value","value":0.7},"fill_color":{"type":"value","value":"navy"},"fill_alpha":{"type":"value","value":0.7},"hatch_color":{"type":"value","value":"navy"},"hatch_alpha":{"type":"value","value":0.7}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1142","attributes":{"x":{"type":"field","field":"Pclass"},"width":{"type":"value","value":0.2},"top":{"type":"field","field":"Survived"},"line_color":{"type":"value","value":"navy"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"navy"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"navy"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1143","attributes":{"x":{"type":"field","field":"Pclass"},"width":{"type":"value","value":0.2},"top":{"type":"field","field":"Survived"},"line_color":{"type":"value","value":"navy"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"navy"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"navy"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1113","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1127"},{"type":"object","name":"WheelZoomTool","id":"p1128","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1129","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p1130","attributes":{"syncable":false,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p1135"},{"type":"object","name":"ResetTool","id":"p1136"},{"type":"object","name":"HelpTool","id":"p1137"},{"type":"object","name":"HoverTool","id":"p1149","attributes":{"renderers":"auto","tooltips":[["Class","@Pclass"],["Gender","@Sex"],["Survival Rate (%)","@Survived{0.0}%"]]}}]}},"toolbar_location":null,"left":[{"type":"object","name":"LinearAxis","id":"p1122","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1123","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1124"},"axis_label":"Survival Rate (%)","major_label_policy":{"type":"object","name":"AllLabels","id":"p1125"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1117","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1118"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1119"},"axis_label":"Class-Gender","major_label_policy":{"type":"object","name":"AllLabels","id":"p1120"}}}],"center":[{"type":"object","name":"Grid","id":"p1121","attributes":{"axis":{"id":"p1117"}}},{"type":"object","name":"Grid","id":"p1126","attributes":{"dimension":1,"axis":{"id":"p1122"}}},{"type":"object","name":"Legend","id":"p1147","attributes":{"items":[{"type":"object","name":"LegendItem","id":"p1148","attributes":{"label":{"type":"field","field":"Sex"},"renderers":[{"id":"p1144"}]}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p1153').textContent;
+              const render_items = [{"docid":"5c6d078c-4dc9-45ff-a576-50945cae21d2","roots":{"p1104":"e85927a9-e9e3-4128-abb0-f9f2da8bce9c"},"root_ids":["p1104"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

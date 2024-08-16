@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.3.4.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="de56d138-4c0b-4454-b356-54daa18043e7" data-root-id="p1004" style="display: contents;"></div>
+  
+    <script type="application/json" id="p1050">
+      {"e27c8d27-7560-4ba6-8111-96efe93061c2":{"version":"3.3.4","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p1004","attributes":{"height":400,"x_range":{"type":"object","name":"FactorRange","id":"p1014","attributes":{"factors":["Child","Young Adult","Adult","Senior"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1006"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1015"},"y_scale":{"type":"object","name":"LinearScale","id":"p1016"},"title":{"type":"object","name":"Title","id":"p1007","attributes":{"text":"Number of Survivors by Age Group"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1044","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1001","attributes":{"selected":{"type":"object","name":"Selection","id":"p1002","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1003"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAA=="},"shape":[4],"dtype":"int32","order":"little"}],["AgeGroup",{"type":"ndarray","array":["Child","Young Adult","Adult","Senior"],"shape":[4],"dtype":"object","order":"little"}],["Count",{"type":"ndarray","array":{"type":"bytes","data":"JwAAAEAAAADoAAAABwAAAA=="},"shape":[4],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p1045","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1046"}}},"glyph":{"type":"object","name":"VBar","id":"p1041","attributes":{"x":{"type":"field","field":"AgeGroup"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"Count"},"line_color":{"type":"value","value":"magenta"},"line_alpha":{"type":"value","value":0.8},"fill_color":{"type":"value","value":"magenta"},"fill_alpha":{"type":"value","value":0.8},"hatch_color":{"type":"value","value":"magenta"},"hatch_alpha":{"type":"value","value":0.8}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1042","attributes":{"x":{"type":"field","field":"AgeGroup"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"Count"},"line_color":{"type":"value","value":"magenta"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"magenta"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"magenta"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1043","attributes":{"x":{"type":"field","field":"AgeGroup"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"Count"},"line_color":{"type":"value","value":"magenta"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"magenta"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"magenta"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1013","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1027"},{"type":"object","name":"WheelZoomTool","id":"p1028","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1029","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p1030","attributes":{"syncable":false,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p1035"},{"type":"object","name":"ResetTool","id":"p1036"},{"type":"object","name":"HelpTool","id":"p1037"},{"type":"object","name":"HoverTool","id":"p1047","attributes":{"renderers":"auto","tooltips":[["Age Group","@AgeGroup"],["Count","@Count"]]}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1022","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1023","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1024"},"axis_label":"Number of Survivors","major_label_policy":{"type":"object","name":"AllLabels","id":"p1025"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1017","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1018"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1019"},"axis_label":"Age Group","major_label_policy":{"type":"object","name":"AllLabels","id":"p1020"}}}],"center":[{"type":"object","name":"Grid","id":"p1021","attributes":{"axis":{"id":"p1017"}}},{"type":"object","name":"Grid","id":"p1026","attributes":{"dimension":1,"axis":{"id":"p1022"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p1050').textContent;
+              const render_items = [{"docid":"e27c8d27-7560-4ba6-8111-96efe93061c2","roots":{"p1004":"de56d138-4c0b-4454-b356-54daa18043e7"},"root_ids":["p1004"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
